@@ -1,15 +1,38 @@
-# 데이터 경로 설정
-# 이 파일을 수정하여 실제 파일 경로를 지정하세요
+# =============================================================================
+# COLMAP 2D-3D Projection Viewer - Configuration
+# =============================================================================
+# 이 파일을 수정하여 실제 파일 경로를 지정하세요.
+# 경로는 절대 경로로 입력하세요.
 
+# -----------------------------------------------------------------------------
 # COLMAP 파일들이 있는 폴더
-COLMAP_DIR = r"D:\RealityScanProjects\export"  # cameras.txt, images.txt가 있는 폴더
+# cameras.txt, images.txt, points3D.txt 파일이 있는 COLMAP export 폴더
+# -----------------------------------------------------------------------------
+# 예시:
+#   Windows: r"D:\Projects\colmap_export"
+#   macOS/Linux: "/home/user/projects/colmap_export"
+COLMAP_DIR = r""
 
+# -----------------------------------------------------------------------------
 # 원본 이미지들이 있는 폴더
-IMAGES_DIR = r"C:\Users\asura\Downloads\SampleSet\mbot_h264_frames"  # DJI_xxx.JPG 등이 있는 폴더
+# COLMAP에서 사용한 원본 이미지 파일들이 있는 폴더
+# -----------------------------------------------------------------------------
+# 예시:
+#   Windows: r"D:\Projects\images"
+#   macOS/Linux: "/home/user/projects/images"
+IMAGES_DIR = r""
 
+# -----------------------------------------------------------------------------
 # 3D 모델 파일 경로
-MODEL_PATH = r"C:\Users\asura\Downloads\SampleSet\projection_project2\model\Eunie-Robot.glb"
+# GLB 또는 GLTF 형식의 3D 모델 파일 경로
+# -----------------------------------------------------------------------------
+# 예시:
+#   Windows: r"D:\Projects\model\scene.glb"
+#   macOS/Linux: "/home/user/projects/model/scene.glb"
+MODEL_PATH = r""
 
+# -----------------------------------------------------------------------------
 # 서버 설정
+# -----------------------------------------------------------------------------
 HOST = "localhost"
 PORT = 8000
